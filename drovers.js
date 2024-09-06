@@ -1,4 +1,5 @@
 const { database } = require("./database.js")
+const { cattleToDrive } = require("./cattle.js")
 
 const hireDrovers = (herdSize) => {
     const drovers = []
@@ -9,6 +10,8 @@ const hireDrovers = (herdSize) => {
         const randomHerderId = Math.floor(Math.random() * allDrovers.length)
         drovers.push(allDrovers[randomHerderId])
     }
+
+    return drovers
 
 }
 

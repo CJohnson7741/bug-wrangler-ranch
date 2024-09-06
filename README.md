@@ -105,11 +105,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > The value is an array of drover objects which contain a first name, last name and a gender.
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > drovers is an array of objects containing a first name, last name and a gender. drover is the individual object that the for loop is interacting with.
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/209a6ae93bae488c8f9ed554800a71dc
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -117,11 +117,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > this loop pushes the string "forest" to the journey array. to do this the loop checks the value of the forests property of the area array and then iterates until the "forestNumber" value matches the areas.forests value.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database variable contains two separate arrays. The first array is the "cattleTypes" array containing objects which have both an "id" and "breed" element. These are the types of cattle in the database. The second array is the "drovers" array and contains objects that have an ID, a first name, a last name, and a gender. These objects are the drovers within the database.
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > It isnt actually defining anything in my version of this code. I suspect it was meant to define the number of cattle within the herd and be used in calculating how many drovers are required. It gets its value from the "roundUp()" function in main.js which is passing in the "cattleToDrive" variable stored in cattle.js
 
 
 ## Final Step
